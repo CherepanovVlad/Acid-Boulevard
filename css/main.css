@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "fonts.css";
 
+
 body {
   margin: 0;
   padding-top: 0;
@@ -42,7 +43,9 @@ body {
   padding-left: 720px;
 }
 .inf {
-  font-family: "Latex";
+  font-family: latex, sans-serif;
+  font-style: normal;
+  font-weight: 400;;
   font-size: 50px;
   text-align: center;
   padding-top: 50px;
