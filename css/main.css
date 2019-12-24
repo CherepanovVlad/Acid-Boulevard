@@ -1,6 +1,16 @@
 @import "reset.css";
 @import "fonts.css";
 
+@font-face {
+  font-family: "latex", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Double Feature";
+  font-style: normal;
+  src: url(../fonts/DoubleFeature20.ttf) format('truetype');
+}
 
 body {
   margin: 0;
@@ -43,9 +53,7 @@ body {
   padding-left: 720px;
 }
 .inf {
-  font-family: latex, sans-serif;
-  font-style: normal;
-  font-weight: 400;;
+  font-family: "Latex";
   font-size: 50px;
   text-align: center;
   padding-top: 50px;
