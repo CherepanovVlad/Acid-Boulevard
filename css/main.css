@@ -1,0 +1,205 @@
+@import "reset.css";
+@import "fonts.css";
+
+body {
+  margin: 0;
+  padding-top: 0;
+  font-family: "Double Feature";
+  background-image: url(../img/1920.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #cc00ff;
+  font-size: 150px;
+  top: 410px;
+  flex-wrap: wrap;
+  height: 100vh;
+  overflow: hidden;
+}
+.krug {
+  justify-content: start;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em;
+}
+.wrap {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.boulevard {
+  text-align: center;
+  padding-top: 100px;
+}
+.data {
+  font-family: "Double Feature";
+  font-size: 75px;
+}
+.text2{
+  padding-left: 150px;
+}
+.text3{
+  padding-left: 720px;
+}
+.inf {
+  font-family: "Latex";
+  font-size: 50px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+/*АНИМАЦИЯ*/
+.text {
+  animation: shadow 4s ease infinite;
+}
+.text::before {
+  position: absolute;
+  content: "Acid Boulevard";
+  filter:  blur(2px);
+  mix-blend-mode: difference;
+}
+.effect {
+  background: radial-gradient(circle, white, black 35%) center / 10% 10%;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: color-dodge;
+  animation: shine 10s linear inifinite;
+
+}
+
+
+@keyframes shadow {
+  50% {
+    text-shadow: 0 0 30px red;
+  }
+}
+@keyframes shine {
+  to {
+    transition: translate(50%, 50%)
+  }
+}
+
+.krug  {
+  overflow: hidden;
+
+-webkit-animation: spin 3s linear 0s infinite reverse;
+ -moz-animation: spin 3s linear 0s infinite reverse;
+ -ms-animation: spin 3s linear 0s infinite reverse;
+ -o-animation: spin 3s linear 0s infinite reverse;
+ animation: spin 3s linear 0s infinite reverse;
+ -webkit-animation-play-state: paused;
+ -moz-animation-play-state: paused;
+ -ms-animation-play-state: paused;
+ -o-animation-play-state: paused;
+ animation-play-state: paused;
+}
+
+.smile_krug img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+  margin-top: 8.75vw;
+  margin-right: 16.875vw;
+  margin-left: 16.875vw;
+
+  -webkit-animation: spin 15s linear 0s infinite normal;
+  -moz-animation: spin 15s linear 0s infinite normal;
+  -ms-animation: spin 15s linear 0s infinite normal;
+  -o-animation: spin 15s linear 0s infinite normal;
+  animation: spin 15s linear 0s infinite normal;
+}
+
+@keyframes spin {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+@-webkit-keyframes spin {
+  0% {-webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-ms-keyframes spin {
+  0% {-ms-transform: rotate(360deg); }
+  100% { -ms-transform: rotate(0deg); }
+}
+@-moz-keyframes spin {
+  0% { -moz-transform: rotate(360deg); }
+  100% { -moz-transform: rotate(0deg); }
+}
+@-o-keyframes spin {
+  0% { -o-transform: rotate(360deg); }
+  100% { -o-transform: rotate(0deg); }
+}
+
+
+/*АДАПТАЦИЯ*/
+@media (min-width: 1366px) and (max-width: 1660px) {
+  .text{
+    font-size: 100px;
+  }
+}@keyframes shadow {
+  50% {
+    text-shadow: 0 0 30px red;
+  }
+}
+@keyframes shine {
+  to {
+    transition: translate(50%, 50%)
+  }
+}
+
+.krug  {
+  overflow: hidden;
+
+-webkit-animation: spin 1s linear 0s infinite reverse;
+ -moz-animation: spin 1s linear 0s infinite reverse;
+ -ms-animation: spin 1s linear 0s infinite reverse;
+ -o-animation: spin 1s linear 0s infinite reverse;
+ animation: spin 1s linear 0s infinite reverse;
+ -webkit-animation-play-state: paused;
+ -moz-animation-play-state: paused;
+ -ms-animation-play-state: paused;
+ -o-animation-play-state: paused;
+ animation-play-state: paused;
+}
+
+.smile_krug img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+  margin-top: 8.75vw;
+  margin-right: 16.875vw;
+  margin-left: 16.875vw;
+
+  -webkit-animation: spin 5s linear 0s infinite normal;
+  -moz-animation: spin 5s linear 0s infinite normal;
+  -ms-animation: spin 5s linear 0s infinite normal;
+  -o-animation: spin 5s linear 0s infinite normal;
+  animation: spin 5s linear 0s infinite normal;
+}
+
+@keyframes spin {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+@-webkit-keyframes spin {
+  0% {-webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-ms-keyframes spin {
+  0% {-ms-transform: rotate(360deg); }
+  100% { -ms-transform: rotate(0deg); }
+}
+@-moz-keyframes spin {
+  0% { -moz-transform: rotate(360deg); }
+  100% { -moz-transform: rotate(0deg); }
+}
+@-o-keyframes spin {
+  0% { -o-transform: rotate(360deg); }
+  100% { -o-transform: rotate(0deg); }
+}
